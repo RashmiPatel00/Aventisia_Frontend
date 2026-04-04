@@ -93,15 +93,20 @@
 }
 
 .header-search {
-  padding: 8px 12px;
   border-radius: 6px;
   background-color: #3e5a7c;
   color: white;
   width: 33.333%;
   border: none;
   flex-shrink: 0;
-}
 
+  padding: 6px 10px 6px 35px;
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/622/622669.png");
+  background-repeat: no-repeat;
+  background-position: 10px center; 
+  background-size: 16px;
+}
 .header-search::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
