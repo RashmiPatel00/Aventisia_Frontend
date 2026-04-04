@@ -10,7 +10,7 @@ export default function Header() {
       <div className="header-left">
         <img src={logo} alt="Logo" className="header-logo" />
         <div className="header-title-section">
-        <div className="header-title">Workspace</div>
+        <div className="header-title">Worcspace</div>
         <div className="workspace-dropdown">
           <button
             className="dropdown-button"
