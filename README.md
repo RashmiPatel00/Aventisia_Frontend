@@ -52,7 +52,7 @@ src/
 
 1. Clone or navigate to the project directory:
 ```bash
-cd "c:\Users\eliza\OneDrive\Desktop\Aventisia Project"
+git clone https://github.com/RashmiPatel00/Aventisia_Frontend
 ```
 
 2. Install dependencies:
