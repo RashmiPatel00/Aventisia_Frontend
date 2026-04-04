@@ -10,22 +10,22 @@ export default function Header() {
       <div className="header-left">
         <img src={logo} alt="Logo" className="header-logo" />
         <div className="header-title-section">
-        <div className="header-title">Worcspace</div>
+        <div className="header-title">Workcpace</div>
         <div className="workspace-dropdown">
           <button
             className="dropdown-button"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
-            Workspace 1
+            Worcspace 1
             <svg className="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <div className="dropdown-item">Workspace 1</div>
-              <div className="dropdown-item">Workspace 2</div>
-              <div className="dropdown-item">Workspace 3</div>
+              <div className="dropdown-item">Workcpace 1</div>
+              <div className="dropdown-item">Workcpace 2</div>
+              <div className="dropdown-item">Workcpace 3</div>
             </div>
           )}
         </div>
