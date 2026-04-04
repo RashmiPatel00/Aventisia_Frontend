@@ -1,0 +1,26 @@
+.agents-container {
+  flex: 1;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.agents-content {
+  text-align: center;
+}
+
+.agents-welcome {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+}
+
+.agents-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 0;
+}

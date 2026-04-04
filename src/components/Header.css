@@ -1,0 +1,278 @@
+.header-container {
+  background-color: #1f2937;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border:20%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.header-title-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.workspace-dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-top: 8px;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f4f6;
+}
+
+.dropdown-item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.dropdown-item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.header-search {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #3e5a7c;
+  color: white;
+  width: 33.333%;
+  border: none;
+  flex-shrink: 0;
+}
+
+.header-search::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-notification {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.bell-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header-notification:hover {
+  transform: scale(1.1);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ef4444a4;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header-avatar {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Tablet Design (768px and below) */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
+  .header-left {
+    gap: 8px;
+  }
+
+  .header-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-title {
+    font-size: 16px;
+  }
+
+  .dropdown-button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .header-search {
+    width: 25%;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .header-icons {
+    gap: 12px;
+  }
+
+  .bell-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile Design (480px and below) */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .header-left {
+    gap: 6px;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .header-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .header-title-section {
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .header-title {
+    font-size: 14px;
+    display: none;
+  }
+
+  .dropdown-button {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .dropdown-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .header-search {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 12px;
+    flex: 1 1 100%;
+  }
+
+  .header-icons {
+    gap: 10px;
+  }
+
+  .bell-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-avatar {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .notification-badge {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+}
