@@ -41,7 +41,6 @@ src/
 └── App.css - Application styles
 ```
 
-## Getting Started
 
 ### Prerequisites
 
